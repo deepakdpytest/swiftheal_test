@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% block title %}Book {% endblock title %} {% block jumbotron %}
+<!--Jumbotron start-->
+<div class="jumbotron">
+    <h1 class="display-4" style="text-align:center">Book an appointment</h1>
+</div>
+<!--jumbotron end-->
+{% endblock jumbotron %} {% block svg %}
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#3282b8" fill-opacity="1"
+        d="M0,160L30,176C60,192,120,224,180,218.7C240,213,300,171,360,160C420,149,480,171,540,202.7C600,235,660,277,720,266.7C780,256,840,192,900,149.3C960,107,1020,85,1080,106.7C1140,128,1200,192,1260,197.3C1320,203,1380,149,1410,122.7L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+    </path>
+</svg> {% endblock svg %} {% block body %}
+<div class="container my-6 pb-6">
+    <form class='pb-4'>
+        <div class="form-group">
+            <label for="doctor_id">Doctor Id</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="doctor_id" placeholder="" value="{{doctor.Doctor_id}}" readonly>
+        </div>
+        <div class="form-group">
+            <label for="name">Doctor Name</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="name" placeholder="" value="{{doctor.Name}}" readonly>
+        </div>
+        <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" name="date" id="">
+        </div>
+        <div class="form-group">
+            <label for="time">Time</label>
+            <input type="time" name="time">
+        </div>
+    </form>
+</div>
+{% endblock body %}

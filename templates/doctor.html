@@ -1,0 +1,102 @@
+ {% extends 'base.html' %} {% block style %}
+<link rel="stylesheet" type="text/css" href="/static/assets/css/style4.css"> {% endblock style %} {% block title %} Doctor {% endblock title %} {% block body %} {% for doctor in doctors %}
+<div>
+    <div class="content">
+        <div class="row">
+            <div class="col-sm-7 col-6 my-4">
+                <h4 class="page-title"></h4>
+            </div>
+
+        </div>
+        <div class="card-box profile-header">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="profile-view">
+                        <div class="profile-img-wrap">
+                            <div class="profile-img">
+                                <a href="#"><img class="avatar" src="/{{doctor.photo}}" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="profile-basic">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="profile-info-left">
+                                        <h3 class="user-name m-t-0 mb-0">{{doctor.Name}}</h3>
+                                        <small class="text-muted">Area of Specialisation: Gynaecology {{doctor.rea_of_specialisation}}</small>
+                                        <div class="staff-id">Registration No: {{doctor.Doctor_id}}</div>
+                                        <div class="staff-msg"><a href="/patient/book/{{doctor.Doctor_id}}" class="btn btn-success">Book an Appointment</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <ul class="personal-info">
+                                        <li>
+                                            <span class="title">Gender:</span>
+                                            <span class="text"><a href="#">{{doctor.Gender}}</a></span>
+                                        </li>
+                                        <li>
+                                            <span class="title">Age:</span>
+                                            <span class="text"><a href="#">{{doctor.Age}}</a></span>
+                                        </li>
+                                        <li>
+                                            <span class="title">Designation:</span>
+                                            <span class="text">CMO (NFSG){{designation}}</span>
+                                        </li>
+                                        <li>
+                                            <span class="title">Workplace:</span>
+                                            <span class="text">{{doctor.hs_name}}</span>
+                                        </li>
+                                        <li>
+                                            <span class="title">Type of Practice:</span>
+                                            <span class="text">{{doctor.Type_of_practice}}</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tab-content">
+            <div class="tab-pane show active" id="about-cont">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card-box">
+                            <h3 class="card-title">Qualification</h3>
+                            <div class="experience-box">
+                                <ul class="experience-list">
+                                    <li>
+
+                                        <div class="experience-content">
+                                            <div class="timeline-content">
+                                                <a href="#/" class="name">{{doctor.Qualification}}</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-box mb-0">
+                            <h3 class="card-title">Work Experience</h3>
+                            <div class="experience-box">
+                                <ul class="experience-list">
+                                    <li>
+                                        <div class="experience-content">
+                                            <div class="timeline-content">
+                                                <a href="#/" class="name">{{doctor.Years_of_experience}}</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %} {% endblock body %} {% comment %} Name {{name}} Area of Specialisation {{area_of_specialisation}} MCI registration number {{reg_no}} Gender {{gender}} Age {{age}} Designation {{designation}} Workplace {{workplace}} Practice {{practice}} Qualification
+{{qualification}} Years of experience {{experience}} {% endcomment %}

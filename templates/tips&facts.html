@@ -1,0 +1,247 @@
+
+{% extends 'base.html' %}
+
+{% block style %}         <link rel="stylesheet" href="/static/assets/css/style3.css">   {% endblock style %} 
+{% block title %} 
+Tips & Facts
+{% endblock title %} 
+
+{% block jumbotron %}
+           <!--Jumbotron start-->
+        <div class="jumbotron">
+          
+          <h1 class="display-4" style = "text-align:center">Tips and Facts</h1><br><br><br>
+          <p><h3 style = "text-align:center; color:rgba(226, 231, 216, 0.973)">Get amazing health related tips and facts which will help you make healthy choices for disease prevention and also improve your lifestyle!</h3></p>
+
+      </div>
+      <!--jumbotron end-->
+{% endblock jumbotron %}
+
+{% block svg %}
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#3282b8" fill-opacity="1"
+                d="M0,160L30,176C60,192,120,224,180,218.7C240,213,300,171,360,160C420,149,480,171,540,202.7C600,235,660,277,720,266.7C780,256,840,192,900,149.3C960,107,1020,85,1080,106.7C1140,128,1200,192,1260,197.3C1320,203,1380,149,1410,122.7L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+            </path>
+        </svg>
+{% endblock svg %}
+
+
+{% block body %}
+
+  <!--MAIN STARTS-->
+<main>
+ <!-- Swiper -->
+
+    <div class="containerr">
+        <div class="myslider_wrapper">
+            <div class="myslider_controls myslider_controls--left">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-left" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                        d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                </svg>
+            </div>
+            <div class="myslider_controls myslider_controls--right">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-right" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+                    <path fill-rule="evenodd"
+                        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </div>
+            <div class="myslider">
+                <div class="myslider_cards">
+                    <div class="image">
+                        <a href="https://fitfoodiefinds.com/" target = "_blank">
+                        <img src="/static/assets/images/image1.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="https://fitfoodiefinds.com/" target = "_blank">
+                        <h3 style="color:white"><u><b><i>Fit Foodie Finds</u></b></i></h3>
+                        <p style="color:white">Who knew oats could look so pretty?</p> 
+                        <p style="color:white">Healthy living posts primarily focused on recipes ranging from low-carb to decadent desserts and everything in between.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="myslider_cards">
+                    <div class="image">
+                        <a href="https://stralayoga.com/blog/" target = "_blank">
+                        <img src="/static/assets/images/image2.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="https://stralayoga.com/blog/" target = "_blank">
+                        <h3 style="color:white"><u><b><i>Strala Yoga</u></b></i></h3>
+                        <p style="color:white">Strala Yoga combines the movement and healing wisdom of tai chi with the traditional Chinese and Japanese medicine, to help people release stress, move easily through challenge, and live radiantly inspiring lives.</p> 
+                        </a>
+                    </div>
+                </div>
+                <div class="myslider_cards">
+                    <div class="image">
+                        <a href="https://www.fwdfuel.com/" target = "_blank">
+                        <img src="/static/assets/images/image5.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="https://www.fwdfuel.com/" target = "_blank">
+                        <h3 style="color:white"><u><b><i>FWDfuel</u></b></i></h3>
+                        <p style="color:white">A clean-eating, whole food approach to sports nutrition that is sustainable for a lifetime.</p> 
+                        </a>
+                    </div>
+                </div>
+                <div class="myslider_cards">
+                    <div class="image">
+                        <a href="https://www.nami.org/blogs" target = "_blank">
+                        <img src="/static/assets/images/image3.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="https://www.nami.org/blogs" target = "_blank">
+                        <h3 style="color:white"><u><b><i>NAMI</u></b></i></h3>
+                        <p style="color:white">NAMI, the National Alliance on Mental Illness, is a mental health organization which provides advocacy, education, support and public awareness so that all individuals and families affected by mental illness can build better lives.</p> 
+                        </a>
+                    </div>
+                </div>
+                <div class="myslider_cards">
+                    <div class="image">
+                        <a href="https://thebirthhour.com/birth-stories/" target = "_blank">
+                        <img src="/static/assets/images/image4.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="https://thebirthhour.com/birth-stories/" target = "_blank">
+                        <h3 style="color:white"><u><b><i>The Birth Hour</u></b></i></h3>
+                        <p style="color:white">The mission is to support expecting parents in their journey to parenthood by helping them to be informed and empowered as they navigate pregnancy, birth, and postpartum.</p> 
+                        </a>
+                    </div>
+                </div>
+                <div class="myslider_cards">
+                    <div class="image">
+                        <a href="https://breakingmuscle.com/" target = "_blank">
+                        <img src="/static/assets/images/image6.png" alt="image">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="https://breakingmuscle.com/" target = "_blank">
+                        <h3 style="color:white"><u><b><i>Breaking Muscle</u></b></i></h3>
+                        <p style="color:white">The fitness world’s preeminent destination for timely, high-quality information on exercise, fitness, health, and nutrition.</p> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+ <!-- Swiper -->
+
+    <div class="containerr my-5">
+        <div class="myslider_wrapper">
+            <div class="myslider_controls myslider_controls--left">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-left" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                        d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                </svg>
+            </div>
+            <div class="myslider_controls myslider_controls--right">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-right" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+                    <path fill-rule="evenodd"
+                        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </div>
+            <div class="myslider">
+                <div class="myslider_cards">
+                    <div class="image">
+                        <a href="https://www.shape.com/" target = "_blank">
+                        <img src="/static/assets/images/image7.jfif" alt="image">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="https://www.shape.com/" target = "_blank">
+                        <h3 style="color:white"><u><b><i>Shape</u></b></i></h3>
+                        <p style="color:white">Tons of free articles, including step-by-step workouts, nutrition advice, weight loss tips & plans and mental health insights.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="myslider_cards">
+                    <div class="image">
+                        <a href="https://www.medlife.com/blog/" target = "_blank">
+                        <img src="/static/assets/images/image8.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="https://www.medlife.com/blog/" target = "_blank">
+                        <h3 style="color:white"><u><b><i>Medlife Blog</u></b></i></h3>
+                        <p style="color:white">Informative health blog articles on disease management and general health by doctors and health experts.</p> 
+                        </a>
+                    </div>
+                </div>
+                <div class="myslider_cards">
+                    <div class="image">
+                        <a href="http://blogs.biomedcentral.com/" target = "_blank">
+                        <img src="/static/assets/images/image12.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="http://blogs.biomedcentral.com/" target = "_blank">
+                        <h3 style="color:white"><u><b><i>BioMed Central Blog</u></b></i></h3>
+                        <p style="color:white">Focuses on a unique aspect of the medical research field and is an useful tool for those looking to expand their knowledge.</p> 
+                        </a>
+                    </div>
+                </div>
+                <div class="myslider_cards">
+                    <div class="image">
+                        <a href="https://blogs.brighthorizons.com/familyroom/category/child-development/" target = "_blank">
+                        <img src="/static/assets/images/image11.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="https://blogs.brighthorizons.com/familyroom/category/child-development/" target = "_blank">
+                        <h3 style="color:white"><u><b><i>Bright Horizons</u></b></i></h3>
+                        <p style="color:white">Get informative and expert childhood development tips which will enhance the quality of care for children.</p> 
+                        </a>
+                    </div>
+                </div>
+                <div class="myslider_cards">
+                    <div class="image">
+                        <a href="https://www.sleepfoundation.org/" target = "_blank">
+                        <img src="/static/assets/images/image10.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="https://www.sleepfoundation.org/" target = "_blank">
+                        <h3 style="color:white"><u><b><i>Sleep Foundation</u></b></i></h3>
+                        <p style="color:white">You’ll find valuable health information and tools to get the sleep you need and deserve.</p> 
+                        </a>
+                    </div>
+                </div>
+                <div class="myslider_cards">
+                    <div class="image">
+                        <a href="https://ohsheglows.com/" target = "_blank">
+                        <img src="/static/assets/images/image8.jpeg" alt="image">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="https://ohsheglows.com/" target = "_blank">
+                        <h3 style="color:white"><u><b><i>Oh She Glows</u></b></i></h3>
+                        <p style="color:white">Vegan recipes, most of which are free of gluten, soy, and processed food.</p> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+                
+</main>
+
+
+{% endblock body %}
+   
+{% block script %}        <script src="/static/assets/js/script.js"></script>   {% endblock script %}

@@ -1,0 +1,209 @@
+{% extends 'base.html' %}
+
+
+{% block style %}
+    <link rel="stylesheet" type="text/css" href="static/assets/css/style4.css">
+{% endblock style %}
+
+{% block title %} 
+Appointments
+{% endblock title %} 
+
+{% block jumbotron %}
+        <!--Jumbotron start-->
+        <div class="jumbotron">
+          
+          <h1 class="display-4" style = "text-align:center">Book an Appointment</h1><br><br><br>
+
+          <p><h3 style = "text-align:center; color:rgba(226, 231, 216, 0.973)">Take online appointments with doctor for physical visit to avoid standing in long queues.</h3></p>
+
+      </div>
+      <!--jumbotron end-->
+{% endblock jumbotron %}
+
+{% block svg %}
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#3282b8" fill-opacity="1"
+                d="M0,160L30,176C60,192,120,224,180,218.7C240,213,300,171,360,160C420,149,480,171,540,202.7C600,235,660,277,720,266.7C780,256,840,192,900,149.3C960,107,1020,85,1080,106.7C1140,128,1200,192,1260,197.3C1320,203,1380,149,1410,122.7L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+            </path>
+        </svg>
+{% endblock svg %}
+
+{% block body %}
+
+
+        <div class="py-0 my-0 text-center">
+            <div class="content">
+                <div class="row">
+                        <h2 class="h1">Doctors</h2>
+                </div>
+        <div class="row doctor-grid">
+                    <div class="col-md-4 col-sm-4  col-lg-3">
+                        <div class="profile-widget">
+                            <div class="doctor-img">
+                                <a class="avatar" href="profile.html"><img alt="" src="/static/assets/images/doctor1.jpg"></a>
+                            </div>
+                            <h4 class="doctor-name text-ellipsis"><a href="/doctor">Cristina Groves</a></h4>
+                            <div class="doc-prof">Gynecologist</div>
+                            <div class="doc-prof">MBBS, MD</div>
+                            <div class="user-country">
+                                <i class="fa fa-map-marker"></i> Max Hospital
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4  col-lg-3">
+                        <div class="profile-widget">
+                            <div class="doctor-img">
+                                <a class="avatar" href="profile.html"><img alt="" src="/static/assets/images/doctor2.jpg"></a>
+                            </div>
+                            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Marie Wells</a></h4>
+                            <div class="doc-prof">Neurologist</div>
+                            <div class="doc-prof">MBBS, DNB, DM</div>
+                            <div class="user-country">
+                                <i class="fa fa-map-marker"></i> Apollo Hospital
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4  col-lg-3">
+                        <div class="profile-widget">
+                            <div class="doctor-img">
+                                <a class="avatar" href="profile.html"><img alt="" src="/static/assets/images/doctor3.jpg"></a>
+                            </div>
+                            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Henry Daniels</a></h4>
+                            <div class="doc-prof">Cardiologist</div>
+                            <div class="doc-prof">MBBS, MD</div>
+                            <div class="user-country">
+                                <i class="fa fa-map-marker"></i> BLK Hospital
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4  col-lg-3">
+                        <div class="profile-widget">
+                            <div class="doctor-img">
+                                <a class="avatar" href="profile.html"><img alt="" src="/static/assets/images/doctor4.jpg"></a>
+                            </div>
+                            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Mark Hunter</a></h4>
+                            <div class="doc-prof">Urologist</div>
+                            <div class="doc-prof">MBBS, DNB, DM</div>
+                            <div class="user-country">
+                                <i class="fa fa-map-marker"></i> RML Hospital
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4  col-lg-3">
+                        <div class="profile-widget">
+                            <div class="doctor-img">
+                                <a class="avatar" href="profile.html"><img alt="" src="/static/assets/images/doctor1.jpg"></a>
+                            </div>
+                            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Cristina Groves</a></h4>
+                            <div class="doc-prof">Gynecologist</div>
+                            <div class="doc-prof">MBBS, MD</div>
+                            <div class="user-country">
+                                <i class="fa fa-map-marker"></i> Max Hospital
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4  col-lg-3">
+                        <div class="profile-widget">
+                            <div class="doctor-img">
+                                <a class="avatar" href="profile.html"><img alt="" src="/static/assets/images/doctor2.jpg"></a>
+                            </div>
+                            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Marie Wells</a></h4>
+                            <div class="doc-prof">Neurologist</div>
+                            <div class="doc-prof">MBBS, DNB, DM</div>
+                            <div class="user-country">
+                                <i class="fa fa-map-marker"></i> Apollo Hospital
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4  col-lg-3">
+                        <div class="profile-widget">
+                            <div class="doctor-img">
+                                <a class="avatar" href="profile.html"><img alt="" src="/static/assets/images/doctor3.jpg"></a>
+                            </div>
+                            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Henry Daniels</a></h4>
+                            <div class="doc-prof">Cardiologist</div>
+                            <div class="doc-prof">MBBS, MD</div>
+                            <div class="user-country">
+                                <i class="fa fa-map-marker"></i> BLK Hospital
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4  col-lg-3">
+                        <div class="profile-widget">
+                            <div class="doctor-img">
+                                <a class="avatar" href="profile.html"><img alt="" src="/static/assets/images/doctor4.jpg"></a>
+                            </div>
+                            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Mark Hunter</a></h4>
+                            <div class="doc-prof">Urologist</div>
+                            <div class="doc-prof">MBBS, DNB, DM</div>
+                            <div class="user-country">
+                                <i class="fa fa-map-marker"></i> RML Hospital
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4  col-lg-3">
+                        <div class="profile-widget">
+                            <div class="doctor-img">
+                                <a class="avatar" href="profile.html"><img alt="" src="/static/assets/images/doctor1.jpg"></a>
+                            </div>
+                            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Cristina Groves</a></h4>
+                            <div class="doc-prof">Gynecologist</div>
+                            <div class="doc-prof">MBBS, MD</div>
+                            <div class="user-country">
+                                <i class="fa fa-map-marker"></i> Max Hospital
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4  col-lg-3">
+                        <div class="profile-widget">
+                            <div class="doctor-img">
+                                <a class="avatar" href="profile.html"><img alt="" src="/static/assets/images/doctor2.jpg"></a>
+                            </div>
+                            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Marie Wells</a></h4>
+                            <div class="doc-prof">Neurologist</div>
+                            <div class="doc-prof">MBBS, DNB, DM</div>
+                            <div class="user-country">
+                                <i class="fa fa-map-marker"></i> Apollo Hospital
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4  col-lg-3">
+                        <div class="profile-widget">
+                            <div class="doctor-img">
+                                <a class="avatar" href="profile.html"><img alt="" src="/static/assets/images/doctor3.jpg"></a>
+                            </div>
+                            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Henry Daniels</a></h4>
+                            <div class="doc-prof">Cardiologist</div>
+                            <div class="doc-prof">MBBS, MD</div>
+                            <div class="user-country">
+                                <i class="fa fa-map-marker"></i> BLK Hospital
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4  col-lg-3">
+                        <div class="profile-widget">
+                            <div class="doctor-img">
+                                <a class="avatar" href="profile.html"><img alt="" src="/static/assets/images/doctor4.jpg"></a>
+                            </div>
+                            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Mark Hunter</a></h4>
+                            <div class="doc-prof">Urologist</div>
+                            <div class="doc-prof">MBBS, DNB, DM</div>
+                            <div class="user-country">
+                                <i class="fa fa-map-marker"></i> RML Hospital
+                            </div>
+                        </div>
+                </div>
+                    </div>
+                </div>
+        <div class="row">
+                    <div class="col-sm-12">
+                        <div class="see-all">
+                            <a class="see-all-btn" href="javascript:void(0);">Load More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+{% endblock body %}

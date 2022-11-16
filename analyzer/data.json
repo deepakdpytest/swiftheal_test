@@ -1,0 +1,65 @@
+{
+    "categories": [
+        "Head and eyes",
+        "Skin infections and other allergies",
+        "Body and joint problems",
+        "Cold and fever",
+        "brain related",
+        "stomach related"
+    ],
+    "symptoms": {
+        "Head and eyes": [
+            "headache",
+            "sunken eyes",
+            "pain behind the eyes",
+            "yellowing of eyes",
+            "blurred and distorted vision",
+            "redness of eyes"
+        ],
+        "Skin infections and other allergies": [
+            "itching",
+            "skin rash",
+            "continuous sneezing",
+            "throat irritation"
+        ],
+        "Body and joint problems": [
+            "joint pain",
+            "fatigue",
+            "sweating",
+            "dehydration",
+            "back pain",
+            "weakness in limbs",
+            "knee pain",
+            "hip joint pain"
+        ],
+        "Cold and fever": [
+            "shivering",
+            "chills",
+            "cold hands and feets",
+            "cough",
+            "high fever",
+            "breathlessness",
+            "sweating",
+            "phlegm",
+            "throat irritation",
+            "runny nose",
+            "chest pain",
+            "swelled lymph nodes"
+        ],
+        "brain related": [
+            "anxiety",
+            "depression",
+            "irritability",
+            "headache"
+        ],
+        "stomach related": [
+            "acidity",
+            "vomiting",
+            "weight gain",
+            "indigestion",
+            "abdominal pain",
+            "swelling of stomach",
+            "excessive hunger"
+        ]
+    }
+}
