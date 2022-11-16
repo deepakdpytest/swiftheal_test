@@ -25,7 +25,7 @@ SECRET_KEY = 'bxofi_us+tu7ddsg1@q(%g)6cm-zfe(r8ui07msq*=+3q+k%3k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["torpido-med.herokuapp.com","localhost","127.0.0.1"]
 
 
 # Application definition
